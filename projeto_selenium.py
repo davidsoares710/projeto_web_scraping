@@ -83,7 +83,7 @@ def fazer_checkout(sb):
 
 def main():
     """Função principal que orquestra todo o fluxo do projeto."""
-    with SB(slow=5) as sb:
+    with SB(slow=15) as sb:
         fazer_login(sb)
         produtos = coletar_produtos(sb)
         salvar_csv(produtos)
